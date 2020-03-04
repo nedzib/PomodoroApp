@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+<html>
+  <ion-header [translucent]="true">
+    <ion-toolbar id="header">
+        <ion-title id="text-nav">
+          Pomodoro
+        </ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content [fullscreen]="true">
+    <div id="container">
+
+        <button class="back" id="button-power" [routerLink]="['/task']">
+          <ion-icon name="power-outline" id="icon"></ion-icon>
+        </button>
+
+        <div id="footer">
+          <button id="button">
+            <ion-icon name="help-circle-outline" id="iconhelp"></ion-icon>
+              help
+          </button>
+          <br>
+          <p>simpol app</p>
+          <br>
+        </div>
+    </div>
+  </ion-content>
+</html>

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="text-nav">Task</ion-title>
+  </ion-toolbar>   
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <br>
+    <ion-item class="ion-input">
+      <ion-label position="floating">task 1</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="ion-input">
+      <ion-label position="floating">task 2</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="ion-input">
+      <ion-label position="floating">task 3</ion-label>
+      <ion-input class="input"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="ion-input">
+      <ion-label position="floating">task 4</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <br>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            1 of 3
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            2 of 3
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <ion-button>start</ion-button>
+</ion-content>

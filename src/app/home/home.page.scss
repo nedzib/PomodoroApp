@@ -1,31 +1,60 @@
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+#header{
+  background-color: #F6F7F8;
+}
+
 #container {
+  background-color: #F5D547;
+  width: 100%;
+  height: 75%;
   text-align: center;
+}
 
+#footer{
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  background-color: #F5D547;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+#text-nav {
+  text-align: left;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+#button-power {
+  background-color: transparent;
+  width: 256px;
+  height: 256px;
+  margin-top: 5%;
 }
 
-#container a {
-  text-decoration: none;
+#icon {
+  width: 25%;
+  height: 25%;
 }
 
-ion-content ion-toolbar {
-  --background: translucent;
+#button {
+  background-color: transparent;
+  width: 15%;
+  height: 25%;
+}
+
+#iconhelp {
+  width: 100%;
+  height: 100%;
+}
+
+.back{
+  background-image: url("/assets/img/pomodoro.png");
+  background-repeat: no-repeat;
+  background-color: #F5D547;
+  background-position: center;
+  width: 512px;
+  height: 512px;
 }
