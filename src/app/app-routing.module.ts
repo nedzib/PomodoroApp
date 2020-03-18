@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: 'task',
     loadChildren: () => import('./task/task.module').then( m => m.TaskPageModule)
+  },  {
+    path: 'counter',
+    loadChildren: () => import('./counter/counter.module').then( m => m.CounterPageModule)
   },
+
 ];
 
 @NgModule({

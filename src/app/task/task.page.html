@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button [routerLink]="['/home']"></ion-back-button>
     </ion-buttons>
-    <ion-title id="text-nav">Task</ion-title>
+    <ion-title id="text-nav" class="font">Task</ion-title>
   </ion-toolbar>   
 </ion-header>
 
@@ -11,40 +11,42 @@
   <div id="container">
     <br>
     <ion-item class="ion-input">
-      <ion-label position="floating">task 1</ion-label>
-      <ion-input></ion-input>
+      <ion-label position="floating" class="font">task 1</ion-label>
+      <ion-input [(ngModel)]="task1"></ion-input>
     </ion-item>
     <br>
     <ion-item class="ion-input">
-      <ion-label position="floating">task 2</ion-label>
-      <ion-input></ion-input>
+      <ion-label position="floating" class="font">task 2</ion-label>
+      <ion-input [(ngModel)]="task2"></ion-input>
     </ion-item>
     <br>
     <ion-item class="ion-input">
-      <ion-label position="floating">task 3</ion-label>
-      <ion-input class="input"></ion-input>
+      <ion-label position="floating" class="font">task 3</ion-label>
+      <ion-input [(ngModel)]="task3"></ion-input>
     </ion-item>
     <br>
     <ion-item class="ion-input">
-      <ion-label position="floating">task 4</ion-label>
-      <ion-input></ion-input>
+      <ion-label position="floating" class="font">task 4</ion-label>
+      <ion-input [(ngModel)]="task4"></ion-input>
     </ion-item>
     <br>
     <ion-grid>
       <ion-row>
         <ion-col>
-          <div>
-            1 of 3
+          <div class="greenpomodoro">
+            <ion-label><br><br>work time <br> {{workTime}} min<br><br></ion-label>
+            <br>
           </div>
         </ion-col>
         <ion-col>
-          <div>
-            2 of 3
+          <div class="greenpomodoro">
+            <ion-label><br><br>break time <br> {{breakTime}} min<br><br></ion-label>
           </div>
         </ion-col>
       </ion-row>
     </ion-grid>
+    <ion-button size="small" (click)="openPicker()" class="font">change</ion-button>
+    <br><br>
+      <ion-button expand="full" class="font" style="font-size: 30px;" [routerLink]="['/counter']">start</ion-button>
   </div>
-
-  <ion-button>start</ion-button>
 </ion-content>
