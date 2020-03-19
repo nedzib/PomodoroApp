@@ -8,12 +8,15 @@ import { CounterPageRoutingModule } from './counter-routing.module';
 
 import { CounterPage } from './counter.page';
 
+import { CountdownModule } from 'ngx-countdown';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CounterPageRoutingModule
+    CounterPageRoutingModule,
+    CountdownModule
   ],
   declarations: [CounterPage]
 })

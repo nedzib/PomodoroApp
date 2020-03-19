@@ -2,7 +2,7 @@
   <ion-header [translucent]="true">
     <ion-toolbar id="header">
         <ion-title id="text-nav">
-          Pomodoro
+          End
         </ion-title>
     </ion-toolbar>
   </ion-header>
@@ -10,15 +10,12 @@
   <ion-content [fullscreen]="true">
     <div id="container">
 
-        <button class="back" id="button-power" [routerLink]="['/task']">
-          <ion-icon name="power-outline" id="icon"></ion-icon>
+        <button class="back" id="button-power">
+          <label id="icon">End <br> Please enjoy <br> a long break</label>
         </button>
 
         <div id="footer">
-          <button id="button" (click)="presentAlert()">
-            <ion-icon name="help-circle-outline" id="iconhelp"></ion-icon>
-              about
-          </button>
+          <ion-button expand="full" class="font" style="font-size: 30px;" [routerLink]="['/home']">home</ion-button>
           <br>
           <p>simpol app</p>
           <br>

@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CountdownModule } from 'ngx-countdown';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     IonicModule.forRoot(), 
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule,
+    CountdownModule],
   providers: [
     StatusBar,
     SplashScreen,

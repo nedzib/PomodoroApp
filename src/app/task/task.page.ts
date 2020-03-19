@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PickerController } from '@ionic/angular';
 import { PickerOptions } from "@ionic/core";
+import { DataService } from 'app/services/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-task',
@@ -9,18 +11,17 @@ import { PickerOptions } from "@ionic/core";
 })
 export class TaskPage {
 
-  constructor(private PickerController: PickerController) { }
+  constructor(private PickerController: PickerController, private dataService: DataService, private router: Router) { }
 
-  breakTimes:  number[] = [5,7,10];
+  public workTime:  number= 25;
+  public breakTime: number= 5;
 
-  workTime:  number= 25;
-  breakTime: number= 5;
+  public task1: string="";
+  public task2: string="";
+  public task3: string="";
+  public task4: string="";
 
-  task1: string="";
-  task2: string="";
-  task3: string="";
-  task4: string="";
-
+  data: any[];
 
   async openPicker() {
     let options: PickerOptions = {
@@ -32,7 +33,6 @@ export class TaskPage {
         {
           text:'Ok',
           handler:(value:any) => {
-            console.log(value.WTime.value);
             this.workTime=value.WTime.value;
             this.breakTime=value.BTime.value;
           }
@@ -57,5 +57,12 @@ export class TaskPage {
     let picker = await this.PickerController.create(options);
     picker.present()
   }
+
+  sendData(){
+    this.data = [{task1: this.task1,task2: this.task2,task3: this.task3,task4: this.task4,work: this.workTime,break: this.breakTime}];
+    this.dataService.setData(this.data);
+    this.router.navigateByUrl('/counter/1');
+  }
+
 
 }

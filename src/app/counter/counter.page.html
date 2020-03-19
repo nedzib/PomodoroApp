@@ -1,9 +1,110 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>counter</ion-title>
-  </ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="text-nav" style="font-family: 'Happy Monkey', cursive">Counter</ion-title>
+  </ion-toolbar>   
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+
+  <div class="container" *ngIf="taskNumber == 0">
+    <div class="count">
+      <label class="big font">{{data[0].task1}}</label>
+      <br><br><br>
+      <div class="num"> 
+        <countdown #cd [config]="configWork" (event)="handleEvent($event)"></countdown>
+      </div>
+      <br><br>
+      <div class="pomodoro1"></div>
+      <br><br>
+      <label class="med font"><span style="color:black; font-size: 23px;">Next</span><br> {{data[0].task2}}</label>
+    </div>
+  </div>
+
+  <div class="containerb" *ngIf="taskNumber == 1">
+    <div class="count">
+      <label class="big fontb">Enjoy your Break</label>
+      <br><br><br>
+      <div class="numb"> 
+        <countdown #cd [config]="configBreak" (event)="handleEvent($event)"></countdown>
+      </div>
+      <br><br>
+      <div class="pomodoro1"></div>
+      <br><br>
+      <label class="med fontb"><span style="color:black; font-size: 23px;">Next</span><br> {{data[0].task2}}</label>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="taskNumber == 2">
+    <div class="count">
+      <label class="big font">{{data[0].task2}}</label>
+      <br><br><br>
+      <div class="num"> 
+        <countdown #cd [config]="configWork" (event)="handleEvent($event)"></countdown>
+      </div>
+      <br><br>
+      <div class="pomodoro2"></div>
+      <br><br>
+      <label class="med font"><span style="color:black; font-size: 23px;">Next</span><br> {{data[0].task3}}</label>
+    </div>
+  </div>
+
+  <div class="containerb" *ngIf="taskNumber == 3">
+    <div class="count">
+      <label class="big fontb">Enjoy your Break</label>
+      <br><br><br>
+      <div class="numb"> 
+        <countdown #cd [config]="configBreak" (event)="handleEvent($event)"></countdown>
+      </div>
+      <br><br>
+      <div class="pomodoro2"></div>
+      <br><br>
+      <label class="med fontb"><span style="color:black; font-size: 23px;">Next</span><br> {{data[0].task3}}</label>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="taskNumber == 4">
+    <div class="count">
+      <label class="big font">{{data[0].task3}}</label>
+      <br><br><br>
+      <div class="num"> 
+        <countdown #cd [config]="configWork" (event)="handleEvent($event)"></countdown>
+      </div>
+      <br><br>
+      <div class="pomodoro3"></div>
+      <br><br>
+      <label class="med font"><span style="color:black; font-size: 23px;">Next</span><br> {{data[0].task4}}</label>
+    </div>
+  </div>
+
+  <div class="containerb" *ngIf="taskNumber == 5">
+    <div class="count">
+      <label class="big fontb">Enjoy your Break</label>
+      <br><br><br>
+      <div class="numb"> 
+        <countdown #cd [config]="configBreak" (event)="handleEvent($event)"></countdown>
+      </div>
+      <br><br>
+      <div class="pomodoro3"></div>
+      <br><br>
+      <label class="med fontb"><span style="color:black; font-size: 23px;">Next</span><br> {{data[0].task4}}</label>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="taskNumber == 6">
+    <div class="count">
+      <label class="big font">{{data[0].task4}}</label>
+      <br><br><br>
+      <div class="num"> 
+        <countdown #cd [config]="configWork" (event)="handleEvent($event)"></countdown>
+      </div>
+      <br><br>
+      <div class="pomodoro4"></div>
+      <br><br>
+      <label class="med font"><span style="color:black; font-size: 23px;">Next</span><br>END</label>
+    </div>
+  </div>
 
 </ion-content>

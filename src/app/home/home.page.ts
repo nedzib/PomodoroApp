@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,19 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, public alertController: AlertController) {}
 
   navigate(){
     this.router.navigate(['/task']);
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'About',
+      subHeader: 'Created with <3',
+      message: 'Developed by Ned',
+      buttons: ['OK']
+    });
+    await alert.present();
   }
 }
