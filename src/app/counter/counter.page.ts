@@ -43,12 +43,12 @@ export class CounterPage implements OnInit {
     if(this.data[0].task4==""){this.data[0].task4="Task 4";}
 
     this.configWork = {
-      leftTime: (this.workTime-15),
+      leftTime: (this.workTime*60),
       format: 'm:s',
     };
 
     this.configBreak = {
-      leftTime: (this.breakTime),
+      leftTime: (this.breakTime*60),
       format: 'm:s',
     };
   }
