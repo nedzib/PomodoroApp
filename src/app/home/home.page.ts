@@ -18,8 +18,8 @@ export class HomePage {
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'About',
-      subHeader: 'Created with <3',
-      message: 'Developed by Ned',
+      subHeader: 'Created with <3 by Ned',
+      message: 'Icons by FlatIcon',
       buttons: ['OK']
     });
     await alert.present();
