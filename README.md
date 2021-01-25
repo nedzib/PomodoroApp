@@ -31,7 +31,7 @@ The app give you this home screen
 <img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/home.jpeg">
 <P>
 
-When you tab on the tomato, the app begin asking you for the name of the tasks and the time
+When you tap on the tomato, the app begin asking you for the name of the tasks and the time
 - to change the task name you just tap on each task, if you avoid this, the app will use by default "task 1", "task 2", "task 3" and "task 4" as the names
 - to change the time you can tap in the "CHANGE" button and then the app gives you 3 options for each timer
 
