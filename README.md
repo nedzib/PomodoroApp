@@ -1,6 +1,8 @@
 # Pomodoro App
 
-[![N|Solid](https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/banner.png)](https://github.com/Ned-zib/PomodoroApp)
+<p align="center">
+<img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/banner.png">
+<P>
 
 Pomodoro is an Angular based application built in Ionic framework in order to have a mobile App with no adds to apply the Pomodoro technique
 
