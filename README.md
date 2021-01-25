@@ -25,21 +25,29 @@ Pomodoro App uses a number of open source projects to work properly:
 ## How works
 The app give you this home screen 
 
-![N|Solid](https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/home.jpeg)
+<p align="center">
+<img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/home.jpeg">
+<P>
 
 When you tab on the tomato, the app begin asking you for the name of the tasks and the time
 - to change the task name you just tap on each task, if you avoid this, the app will use by default "task 1", "task 2", "task 3" and "task 4" as the names
 - to change the time you can tap in the "CHANGE" button and then the app gives you 3 options for each timer
 
-![N|Solid](https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/task.png)
+<p align="center">
+<img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/task.png">
+<P>
 
 Then, when you tap on the "START" button the app began with the timer and show you the next task, when the timer ends, the break timer begin, and then when that ends, the next task begin
 
-![N|Solid](https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/pomodoros.png)
+<p align="center">
+<img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/pomodoros.png">
+<P>
 
 When all your pomodoros has been completed, the app show you the END page, and encourage you to take a long break, and also you have the option to go back to the Home screen
 
-![N|Solid](https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/end.jpeg)
+<p align="center">
+<img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/end.jpeg">
+<P>
 
 ### Installation
 
