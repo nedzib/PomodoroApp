@@ -26,7 +26,7 @@ Pomodoro App uses a number of open source projects to work properly:
 The app give you this home screen 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/home.jpeg">
+<img src="https://raw.githubusercontent.com/Ned-zib/PomodoroApp/master/rdm_images/homep.jpeg">
 <P>
 
 When you tab on the tomato, the app begin asking you for the name of the tasks and the time
