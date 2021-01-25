@@ -9,7 +9,7 @@ According to Wikipedia (2021)...
 
 # Features!
 
-  - Miminal app
+  - Miminalist app
   - You can change the name of the tasks
   - You can select between 3 different time periods for the working time and the break time 
 
